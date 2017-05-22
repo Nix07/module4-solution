@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="MenuApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome to our Restaurant</title>
+  </head>
+  <body style="background: #D8D8D8">
+    <div style="margin-left: 10em;">
+      <h3>
+        <a ui-sref="home" ui-sref-active="activeTab">Home</a>
+        <a ui-sref="categories" ui-sref-active="activeTab">Categories</a>
+      </h3>
+
+    </div>
+    <ui-view></ui-view>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://unpkg.com/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+    <script src="data.module.js"></script>
+    <script src="menuapp.module.js"></script>
+
+    <script src="routes.js"></script>
+
+    <script src="categories.component.js"></script>
+    <script src="items.component.js"></script>
+    <script src="menuapp.controller.js"></script>
+    <script src="items.controller.js"></script>
+    <script src="menudata.service.js"></script>
+
+  </body>
+</html>

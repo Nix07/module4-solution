@@ -1,0 +1,10 @@
+<div style="margin-left: 10em;">
+  <h2>Menu Categories</h2>
+  <h3>
+    <ol>
+      <li ng-repeat="category in $ctrl.categories">
+        <a ui-sref="categories.itemDetail({itemId: category.short_name})" ng-click="mainData.getItemsForCategory({itemId: category.short_name})">{{category.name}}</a>
+      </li>
+    </ol>
+  </h3>
+</div>
